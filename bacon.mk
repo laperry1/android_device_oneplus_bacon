@@ -87,7 +87,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     tunnel.audio.encode=true \
     media.aac_51_output_enabled=true \
     audio.offload.pcm.16bit.enable=true \
-    audio.offload.pcm.24bit.enable=true
+    audio.offload.pcm.24bit.enable=true \
+    ro.audio.monitorRotation=true \
+    lpa.decode=false \
+    lpa.releaselock=false \
+    lpa.use-stagefright=false \
+    tunnel.decode=false
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES +=
@@ -304,7 +309,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.qualcomm.perf.cores_online=2 \
     ro.vendor.extension_library=libqti-perfd-client.so \
     ro.telephony.call_ring.multiple=0 \
-    ro.telephony.default_network=9
+    ro.telephony.default_network=9 \
+    log.tag.launcher_force_rotate=VERBOSE \
+    lockscreen.rot_override=true
 
 # Call the proprietary setup
 $(call inherit-product-if-exists, vendor/oneplus/bacon/bacon-vendor.mk)
