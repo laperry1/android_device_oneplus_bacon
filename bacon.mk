@@ -308,7 +308,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.qualcomm.perf.cores_online=2 \
     ro.vendor.extension_library=libqti-perfd-client.so \
     ro.telephony.call_ring.multiple=0 \
-    ro.telephony.default_network=9
+    ro.telephony.default_network=9 \
+    log.tag.launcher_force_rotate=VERBOSE \
+    lockscreen.rot_override=true
 
 # Call the proprietary setup
 $(call inherit-product-if-exists, vendor/oneplus/bacon/bacon-vendor.mk)
