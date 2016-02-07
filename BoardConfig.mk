@@ -32,7 +32,9 @@ TARGET_BOARD_PLATFORM := msm8974
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno330
 
 # Build with Clang by default
-USE_CLANG_PLATFORM_BUILD := true
+USE_CLANG_QCOM := true
+CLANG_QCOM_COMPILE_ART := true
+CLANG_QCOM_COMPILE_BIONIC := true
 
 # Architecture
 TARGET_ARCH := arm
