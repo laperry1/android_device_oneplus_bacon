@@ -24,9 +24,6 @@ $(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
-# ViperFX
-$(call inherit-product-if-exists, packages/apps/Viper4Android/viperfx.mk)
-
 PRODUCT_NAME := cm_bacon
 PRODUCT_DEVICE := bacon
 PRODUCT_MANUFACTURER := OnePlus
