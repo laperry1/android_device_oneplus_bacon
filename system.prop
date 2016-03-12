@@ -22,8 +22,6 @@ ro.gps.agps_provider=1
 
 # Media
 af.fast_track_multiplier=1
-
-audio.deep_buffer.media=true
 audio_hal.period_size=192
 persist.audio.fluence.voicecall=true
 ro.qc.sdk.audio.fluencetype=fluence
@@ -35,10 +33,9 @@ audio.offload.multiple.enabled=false
 audio.offload.gapless.enabled=true
 audio.offload.pcm.16bit.enable=true
 audio.offload.pcm.24bit.enable=true
-av.streaming.offload.enable=true
-lpa.decode=false \
-lpa.releaselock=false \
-lpa.use-stagefright=false \
+lpa.decode=false
+lpa.releaselock=false
+lpa.use-stagefright=false
 tunnel.decode=false
 
 mm.enable.smoothstreaming=true
